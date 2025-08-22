@@ -7,7 +7,9 @@ namespace PokeBot
 {
     public class CapturePokemonName
     {
-        private readonly Rectangle _region = new Rectangle(360, 212, 150, 42);
+        private readonly Rectangle _region = new Rectangle(360, 212, 150, 42); // LAPTOP SCREEN COORDINATES 1920X1080 - 1920x1200
+        // private readonly Rectangle _region = new Rectangle(480, 254, 200, 50); DESKTOP SCREEN COORDINATES 2480x....
+        
         public string GetName()
         {
             using (Bitmap screenshot = new Bitmap(_region.Width, _region.Height))
